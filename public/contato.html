@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato KAF Chopp - Fale Conosco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-obsidian: #00235A;
+            --color-amber-gold: #AA5D00;
+            --color-foam: #F5F5DC;
+        }
+        body {
+            background-color: var(--color-obsidian);
+            color: var(--color-foam);
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(170,93,0,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-obsidian min-h-screen relative overflow-x-hidden">
+    <!-- Header Layer (z-index: 50) -->
+    <nav class="fixed top-10 inset-x-0 mx-auto max-w-fit rounded-full z-[50] pr-8 pl-8 py-3 flex items-center justify-center space-x-6 bg-black/60 backdrop-blur-md border border-white/10 shadow-2xl">
+        <a href="index.html" class="text-foam/70 hover:text-amber-gold transition-colors text-sm font-medium uppercase tracking-widest">Início</a>
+        <a href="cervejaria.html" class="text-foam/70 hover:text-amber-gold transition-colors text-sm font-medium uppercase tracking-widest">A Cervejaria</a>
+        <a href="catalogo.html" class="text-foam/70 hover:text-amber-gold transition-colors text-sm font-medium uppercase tracking-widest">Catálogo</a>
+        <a href="bebidas.html" class="text-foam/70 hover:text-amber-gold transition-colors text-sm font-medium uppercase tracking-widest">Bebidas</a>
+        <a href="contato.html" class="relative text-amber-gold transition-colors text-sm font-medium uppercase tracking-widest after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-amber-gold after:rounded-full">Contato</a>
+    </nav>
+
+    <!-- Background Layer (z-index: 1) -->
+    <div class="fixed inset-0 bg-pattern pointer-events-none z-[1]"></div>
+    
+    <header class="relative z-10 py-32 text-center border-b border-white/5 bg-black/40 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-7xl md:text-9xl font-display font-bold uppercase tracking-tighter mb-6 leading-none drop-shadow-2xl">
+                Fale <span class="text-amber-gold italic">Conosco</span>
+            </h1>
+            <div class="flex items-center justify-center gap-4">
+                <div class="h-px w-12 bg-amber-gold/40"></div>
+                <p class="text-amber-gold font-bold uppercase tracking-[0.4em] text-xs md:text-sm drop-shadow-md">Estamos à sua disposição</p>
+                <div class="h-px w-12 bg-amber-gold/40"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-4xl mx-auto px-4 py-24 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+            <div class="bg-black/40 p-10 rounded-3xl border border-white/10 backdrop-blur-md">
+                <h3 class="text-2xl font-display font-bold text-foam mb-6 uppercase tracking-tighter">Onde Estamos</h3>
+                <p class="text-foam/60 mb-8">Palhoça, Santa Catarina<br>Grande Florianópolis - SC</p>
+                
+                <h3 class="text-2xl font-display font-bold text-foam mb-6 uppercase tracking-tighter">Telefones</h3>
+                <p class="text-foam/60 mb-8">(48) 3333-3333<br>(48) 99999-9999</p>
+            </div>
+            <div class="bg-black/40 p-10 rounded-3xl border border-white/10 backdrop-blur-md">
+                <h3 class="text-2xl font-display font-bold text-foam mb-6 uppercase tracking-tighter">Horário</h3>
+                <p class="text-foam/60 mb-8">Segunda a Sexta: 08h às 18h<br>Sábado: 08h às 12h</p>
+                
+                <a href="#" class="inline-block w-full text-center py-4 bg-amber-gold text-black font-bold uppercase tracking-widest rounded-xl hover:bg-amber-gold/80 transition-colors">
+                    Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="relative z-10 py-20 border-t border-white/5 text-center">
+        <p class="text-foam/30 uppercase tracking-[0.5em] text-[10px]">© 2026 KAF Chopp. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
